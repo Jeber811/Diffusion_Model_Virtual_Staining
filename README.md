@@ -1,7 +1,7 @@
 # Comparative Study of Diffusion-Based Architectures for H&E-to-IHC Virtual Staining
 
 **CAP5516 — University of Central Florida**
-**Author:** ja396977@ucf.edu
+**Author:** Jake Weber
 
 ---
 
