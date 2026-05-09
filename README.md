@@ -15,6 +15,18 @@ All four models are evaluated on the [BCI-512 benchmark dataset](https://bupt-ai
 
 ---
 
+## About the Technical Report
+
+This repository is accompanied by a full technical report: **Comparative Study of Diffusion-Based Architectures for H&E-to-IHC Virtual Staining**. 
+
+The report explores whether specific diffusion model design choices—such as standard vs. bridge-based diffusion, UNet vs. Transformer backbones, and auxiliary topological losses—can help diffusion models close the performance gap with established GAN baselines in computational pathology. 
+
+**What the report covers:**
+* **Architectural Analysis:** A systematic comparison of BBDM, PST-Diff+STN, ScoreTopo, and HistDiT+SAM evaluated on the BCI-512 benchmark under standardized compute constraints.
+* **Novel Contributions:** Details the implementation of a novel Topological Consistency Loss (ScoreTopo), STN-in-the-loop for slide misalignment correction (PST-Diff+STN), and dual-stream SAM conditioning (HistDiT+SAM).
+* **Clinical Context:** Discusses the challenges of structural hallucination and slide-pair misalignment in predicting HER2 expression from H&E slides.
+* **Key Conclusions:** Analyzes why BBDM excels in pixel-level fidelity (PSNR/SSIM) while PST-Diff+STN achieves the best perceptual quality (FID/LPIPS), highlighting the specific inductive biases required to make diffusion models viable for clinical virtual staining.
+
 ## Models
 
 | Model | Description | Params |
